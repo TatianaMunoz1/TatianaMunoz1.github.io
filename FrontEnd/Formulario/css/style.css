@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+
+nav{
+  z-index: 3;
+}
+
+
+*{
+margin:0;
+padding:0;}
+
+body {
+    margin:0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+/* -----------------------------------------HEADER -----------------------*/
+aside {
+  margin-top:2.3%; /*Esto es para la barra de navegacion*/
+    background-color: #1CD1B0;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 0 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+header{
+    background-color: #00669F;
+    position:sticky;
+    padding:5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 ,.nombre{
+    position:relative;
+    top:-20px;
+    color:white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    display:inline;
+    margin:20px;
+}
+
+/*------------------------A partir de Login--------------------------------*/
+
+.login{
+    background-color: #fff;
+    margin-top:5%;
+    margin-left:28%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+h1{
+font-family: 'Inter';
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 72px;
+padding-bottom: 55px;
+color: #333333;
+
+}
+
+::placeholder{
+font-family: 'Karla';
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+color: #000000;
+}
+
+/*---------------------------------------INPUT ---------------------------*/
+input {
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    padding-left: 26px;
+    width: 620px;
+    
+    
+}
+#boton {
+width: 614.25px;
+height: 53.79px;
+background: #1CD1B0;
+border-radius: 23.011px;
+border-color: transparent;
+margin-top: 64px;
+
+}
+
+.btn{
+    font-family:'Karla';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0px;
+    color: #000000;
+}
+
+.rgt{ 
+    
+padding-top: 20px;
+
+position: absolute;
+padding-left:120px;
+text-align: center;
+
+   
+
+}
+.Texto-Registro{
+text-decoration: none;
+
+font-family: 'Karla';
+font-style: normal;
+font-weight: normal;
+font-size: 21.4769px;
+line-height: 28px;
+color:black; 
+
+}
+/* -----------------------Parte de links--------------------*/
+a{
+    text-decoration:none;
+     color: #00669F;
+}
+
+a:hover {
+    color: hotpink;
+  }
+
+/*- ------------------------------- Footer --------------------------------*/
+
+footer{
+    background-color: #00669F;
+    margin-top:10%;
+    bottom:0;
+    clear:both;
+    width:100%;
+    height:70px;
+ 
+    
+}
+
+p{
+    color:white;
+    text-align:center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 70px;
+    
+}
+.txt-foot{
+    margin-left:40px;
+   
+    
+}
+
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+ 
+    padding: 8px;
+    font-family: 'Noto Sans KR';
+    
+    background-color: rgb(76, 52, 85); /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    left:0;
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  .navbar ul {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  
+  
+  .navbar a:hover, .navbar li:hover > a {
+    color: #91d7f3;
+    font-weight: bold;
+  }
+  
+  
+  
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #bbecff ;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+  
+  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+  
+  .navbar .dropdown ul a {
+    padding: 8px 20px;
+    font-size: 18px;
+    text-transform: none;
+    color: #151515;
+    font-weight: 400;
+  }
+  
+  .navbar .dropdown ul a i {
+    font-size: 12px;
+  
+  }
+  
+  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+    background-color: #8ed1d6;
+    font-weight: bold;
+  }
+  
+  .navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+  
+  .navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+  
+  
+
+ 
+
+
+    

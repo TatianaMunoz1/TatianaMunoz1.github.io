@@ -1,0 +1,9 @@
+
+@import url("./style-home.css");
+
+textarea{
+width: 74.7%;
+height: 251px;
+border: 1px solid #000000;
+margin-top:20px;
+}
